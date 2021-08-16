@@ -1,16 +1,15 @@
-import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom';
 
-import { auth, database, firebase } from '../services/firebase'
+import { database } from '../services/firebase';
 
-import IllustrationImg from '../assets/images/illustration.svg'
-import logoImg from '../assets/images/logo.svg'
-import googleIconImg from '../assets/images/google-icon.svg'
+import IllustrationImg from '../assets/images/illustration.svg';
+import logoImg from '../assets/images/logo.svg';
+import googleIconImg from '../assets/images/google-icon.svg';
 
-import { Button } from '../components/Button'
+import { Button } from '../components/Button';
 import '../styles/auth.scss';
-import { FormEvent, useContext, useState } from 'react' 
-import { AuthContext } from '../contexts/AuthContext' 
-import { useAuth } from '../hooks/useAuth'
+import { FormEvent, useState } from 'react' ;
+import { useAuth } from '../hooks/useAuth';
 
 export function Home() {
   const history = useHistory(); // hook do react somente inserir dentro desse contexto do componente.

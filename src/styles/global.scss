@@ -12,3 +12,54 @@ body {
 body, input, button, textarea {
   font: 400 16px 'Roboto', sans-serif; 
 }
+
+@media (max-width: 281px) // Galaxy Fold.
+{
+  .question footer > div {
+    display: grid;
+  }
+}
+
+@media (max-width: 557px)
+{
+  #page-room main .room-title span {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 558px)
+{
+   #div_img_header img
+   {
+    margin: 0 auto;
+   }
+   .room-code {
+     max-width: 100%;
+     margin: 10px;
+   }
+   .margin_left_auto_item {
+    margin: 0 auto;
+    padding-top: 6px;
+  }
+  #page-room main {
+    margin: 30px;
+  }
+  #page-auth {
+    display: block;
+  }
+  #page-auth main {
+    padding: 30px 32px;
+  }
+  #page-auth aside {
+    display: none;
+  }
+}
+
+@media (min-width: 559px) and (max-width: 916px)
+{
+  #page-room main {
+    margin: 30px;
+  }
+}
+

@@ -54,9 +54,13 @@ export function AdminRoom () {
     <div id="page-room">
       <header>
           <div className="content">
-                <img src={logoImg} alt="Letmeask" />
-                <div>
-                  <RoomCode code={roomId} />
+                <div id="div_img_header">
+                  <img src={logoImg} alt="Letmeask" />
+                </div>
+                <div className="margin_left_auto_item">
+                  <RoomCode code={roomId} />  
+                </div>
+                <div className="margin_left_auto_item">
                   <Button isOutlined onClick={handleEndRoom}>Encerrar sala</Button>
                 </div>
           </div>  

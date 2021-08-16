@@ -1,5 +1,6 @@
 #page-auth {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); // Duas Colunas Flexíveis
     align-items: stretch;
     height: 100vh;
 
