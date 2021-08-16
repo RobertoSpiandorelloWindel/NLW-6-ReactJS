@@ -1,5 +1,5 @@
 import { FormEvent, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import logoImg from '../assets/images/logo.svg';
 
 import { Button } from '../components/Button';
@@ -17,6 +17,7 @@ type RoomParams = {
 
 export function Room () {
   const { user } = useAuth();
+  const history = useHistory();
   const params = useParams<RoomParams>();
   const [newQuestion, setNewQuestion] = useState('');
   const roomId = params.id;
@@ -29,7 +30,9 @@ export function Room () {
     }
 
     if(!user) {
-      throw new Error('You must be logged in');
+      history.push(`/`);
+      //throw new Error('You must be logged in');
+      return;
     }
 
     const question = {
